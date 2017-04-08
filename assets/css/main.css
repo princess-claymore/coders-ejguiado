@@ -168,39 +168,48 @@ nav.solid #logo .logo {
   transform: rotate(-45deg);
  }
 
- img{
-  height:200px;
-   width:199px;
- }
- /*#coders{
-   margin-top:70px;
- }
-imagenes*/
- /*.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #f7b617;
- }
- .container:hover .overlay {
-  opacity:0.4;
- }
- .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
- }
- #ContenedorCoders{
-   margin-top: 100px;
 
- }
+.div-figura{
+	display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 380px;
+	height: 380px;
+	margin-top:-5px;
+}
+
+.div-figura img{
+  width: 380px;
+	height: 380px;
+  transition: all 0.5s ease-out;
+}
+
+.div-figura img:hover{
+	opacity: 0.4;
+  transform: scale(1.1);
+}
+
+.div-figura:hover {
+	opacity: 1;
+	background-color: #f7b617;
+	cursor: pointer;
+}
+
+.div-figura span{
+  color: white;
+  z-index: 1;
+	display: none;
+	font-size:33px;
+	text-align: center;
+  margin: auto;
+  position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+}
+
+.div-figura:hover span,.div-figura:focus span{
+	display: block;
+}
